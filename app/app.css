@@ -104,7 +104,7 @@
     }
 
     .navbar {
-        @apply fixed top-0 w-full z-50 bg-background/90 backdrop-blur-sm border-b border-black/5;
+        @apply fixed top-0 w-full z-50 bg-black/90 backdrop-blur-sm border-b border-white/10;
 
         .inner {
             @apply max-w-7xl mx-auto px-6 h-16 flex items-center justify-between;
@@ -116,11 +116,11 @@
                     @apply flex items-center space-x-2 cursor-pointer;
 
                     .logo {
-                        @apply w-6 h-6 text-black;
+                        @apply w-6 h-6 text-white;
                     }
 
                     .name {
-                        @apply text-xl font-serif font-bold text-black tracking-tight;
+                        @apply text-xl font-serif font-bold text-white tracking-tight;
                     }
                 }
 
@@ -128,7 +128,7 @@
                     @apply hidden md:flex items-center space-x-6;
 
                     a {
-                        @apply text-sm font-medium text-zinc-600 hover:text-black transition-colors;
+                        @apply text-sm font-medium text-zinc-400 hover:text-white transition-colors;
                     }
                 }
             }
@@ -137,7 +137,7 @@
                 @apply flex items-center space-x-4;
 
                 .greeting {
-                    @apply text-xs font-semibold uppercase tracking-wide text-zinc-500;
+                    @apply text-xs font-semibold uppercase tracking-wide text-zinc-400;
                 }
 
                 .btn {
@@ -145,7 +145,7 @@
                 }
 
                 .login {
-                    @apply text-xs font-bold uppercase tracking-wide text-zinc-900 hover:text-primary transition-colors;
+                    @apply text-xs font-bold uppercase tracking-wide text-zinc-300 hover:text-primary transition-colors;
                 }
 
                 .cta {
@@ -484,7 +484,7 @@
         }
 
         .projects {
-            @apply py-24 bg-white relative border-b border-zinc-100;
+            @apply py-24 bg-black relative border-b border-white/10;
 
             .section-inner {
                 @apply max-w-7xl mx-auto px-6;
@@ -496,11 +496,11 @@
                         @apply max-w-2xl;
 
                         h2 {
-                            @apply text-4xl font-serif text-black mb-4;
+                            @apply text-4xl font-serif text-white mb-4;
                         }
 
                         p {
-                            @apply text-zinc-500 text-lg;
+                            @apply text-zinc-400 text-lg;
                         }
                     }
                 }
@@ -513,45 +513,45 @@
                     @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
 
                     .project-card {
-                        @apply relative bg-white rounded-xl overflow-hidden border border-zinc-200 shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer flex flex-col h-full;
+                        @apply relative bg-zinc-950 rounded-xl overflow-hidden border border-white/10 shadow-sm hover:shadow-xl hover:shadow-white/5 transition-all duration-300 cursor-pointer flex flex-col h-full;
 
                         .preview {
-                            @apply aspect-4/3 overflow-hidden bg-zinc-100 relative;
+                            @apply aspect-4/3 overflow-hidden bg-zinc-900 relative;
 
                             img {
                                 @apply w-full h-full object-cover group-hover:scale-105 transition-transform duration-700;
                             }
 
                             .badge {
-                                @apply absolute top-3 left-3 bg-white/90 backdrop-blur-md px-2 py-1 rounded-md border border-zinc-200 shadow-sm;
+                                @apply absolute top-3 left-3 bg-black/90 backdrop-blur-md px-2 py-1 rounded-md border border-white/10 shadow-sm;
 
                                 span {
-                                    @apply text-[10px] font-bold uppercase tracking-wider text-zinc-800;
+                                    @apply text-[10px] font-bold uppercase tracking-wider text-zinc-300;
                                 }
                             }
                         }
 
                         .card-body {
-                            @apply p-5 flex justify-between items-center bg-white border-t border-zinc-100 grow;
+                            @apply p-5 flex justify-between items-center bg-zinc-950 border-t border-white/10 grow;
 
                             h3 {
-                                @apply text-lg font-serif font-bold text-zinc-900 group-hover:text-primary transition-colors;
+                                @apply text-lg font-serif font-bold text-white group-hover:text-primary transition-colors;
                             }
 
                             .meta {
-                                @apply flex items-center text-zinc-400 text-xs mt-1 space-x-2;
+                                @apply flex items-center text-zinc-500 text-xs mt-1 space-x-2;
 
                                 span {
                                     @apply font-mono uppercase;
                                 }
 
                                 span:last-child {
-                                    @apply text-zinc-400 text-[10px] uppercase tracking-wide;
+                                    @apply text-zinc-500 text-[10px] uppercase tracking-wide;
                                 }
                             }
 
                             .arrow {
-                                @apply w-10 h-10 rounded-full bg-zinc-50 border border-zinc-200 flex items-center justify-center text-zinc-400 group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all duration-300;
+                                @apply w-10 h-10 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center text-zinc-500 group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all duration-300;
                             }
                         }
                     }
